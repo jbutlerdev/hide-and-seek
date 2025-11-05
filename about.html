@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>About - Hide and Seek Adventure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            background: #f0f0ff;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tool {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .tool-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-name {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-desc {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .prompts {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+        }
+
+        .prompt {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .prompt-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .prompt-text {
+            font-size: 1rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .tools {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 About This Game</h1>
+
+        <div class="highlight">
+            <p style="font-size: 1.3rem; text-align: center; margin-bottom: 0;">
+                <strong>Built for Bring Your Kid to Work Day! 👨‍👧‍👦</strong>
+            </p>
+        </div>
+
+        <p>
+            This Hide and Seek game was created as a special project for Bring Your Kid to Work Day.
+            It's a fun example of how we can use AI tools to quickly build interactive games and websites!
+        </p>
+
+        <h2>🛠️ How It Was Built</h2>
+
+        <p>
+            Instead of typing everything by hand, this entire game was built using voice commands and AI!
+            Here's how it worked:
+        </p>
+
+        <div class="tools">
+            <div class="tool">
+                <div class="tool-icon">🎤</div>
+                <div class="tool-name">MacWhisper</div>
+                <div class="tool-desc">Turned spoken words into text using speech-to-text technology</div>
+            </div>
+            <div class="tool">
+                <div class="tool-icon">🤖</div>
+                <div class="tool-name">Claude Code</div>
+                <div class="tool-desc">AI coding assistant that wrote all the code based on the instructions</div>
+            </div>
+        </div>
+
+        <p>
+            By speaking naturally about what we wanted, the AI understood and created a complete game
+            with beautiful graphics, animations, and multiple levels!
+        </p>
+
+        <h2>💬 The Prompts We Used</h2>
+
+        <p>
+            Here are some of the things we said to build this game:
+        </p>
+
+        <div class="prompts">
+            <div class="prompt">
+                <div class="prompt-label">Prompt 1:</div>
+                <div class="prompt-text">
+                    "Build me a hide and seek themed game. Add lots of different levels to the game.
+                    I want one full of pumpkin patch. I want one for outer space. I want one for a playground.
+                    I want one for a farm. I want a one-minute timer for each level."
+                </div>
+            </div>
+
+            <div class="prompt">
+                <div class="prompt-label">Prompt 2:</div>
+                <div class="prompt-text">
+                    "Include better instructions on how to play the game."
+                </div>
+            </div>
+
+            <div class="prompt">
+                <div class="prompt-label">Prompt 3:</div>
+                <div class="prompt-text">
+                    "Make sure items don't get hidden behind the menu bar."
+                </div>
+            </div>
+
+            <div class="prompt">
+                <div class="prompt-label">Prompt 4:</div>
+                <div class="prompt-text">
+                    "I tried to play the game on my phone and it wasn't very good."
+                </div>
+            </div>
+        </div>
+
+        <p>
+            That's it! With just a few simple spoken requests, we created a fully functional game
+            that works on computers, tablets, and phones.
+        </p>
+
+        <h2>✨ What We Learned</h2>
+
+        <p>
+            This project shows how AI tools are changing the way we create software. By describing
+            what we want in plain English, we can build things faster than ever before. The AI
+            handles the complex technical details while we focus on the creative ideas!
+        </p>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-button">← Back to Game</a>
+        </div>
+    </div>
+</body>
+</html>
